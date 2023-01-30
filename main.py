@@ -7,7 +7,7 @@ def init():
    while True:
       print('iteration')
       variable = input('input something!: ')
-      if variable == "fire":
+      if variable.find("fire"):
          thing.on()
          sleep(.25)
          thing.off()
