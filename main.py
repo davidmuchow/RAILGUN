@@ -12,6 +12,8 @@ def init():
          sleep(.25)
          thing.off()
       else:
-         print("non")
+        thing.on()
+        sleep(.25)
+        thing.off()
          
 init()
