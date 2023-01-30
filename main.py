@@ -1,7 +1,7 @@
 from time import sleep
 import gpiozero as gpio
 
-thing = gpio.DigitalOutputDevice(7)
+thing = gpio.DigitalOutputDevice(4)
 
 def init():
    while True:
