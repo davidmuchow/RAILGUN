@@ -37,7 +37,7 @@ def init():
                      print("wrong var #")
                      continue
                   else:
-                     getattr(railgunner, variables[1])(*variables)
+                     getattr(injector, variables[1])(*variables)
             except ValueError:
                print("not a valid cmd")
          else:
