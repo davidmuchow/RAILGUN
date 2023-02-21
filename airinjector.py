@@ -1,7 +1,7 @@
 from time import time, sleep
 from gpiozero import OutputDevice
 
-solenoid = OutputDevice(15)
+solenoid = OutputDevice(17)
 
 OPTIMAL_FIRING_TIME = .0125
 
