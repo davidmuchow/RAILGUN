@@ -16,4 +16,4 @@ class airinjector:
     
     def test(self, *args):
         args = args[0]
-        self.fire(int(args[3]))
+        self.fire(float(args[3]))
