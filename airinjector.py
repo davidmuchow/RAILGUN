@@ -1,7 +1,7 @@
 from time import time, sleep
 from gpiozero import OutputDevice
 
-solenoid = OutputDevice(17)
+# solenoid = OutputDevice(17)
 
 OPTIMAL_FIRING_TIME = .0125
 
@@ -10,10 +10,9 @@ class airinjector:
         self.init_time = time()
         
     def fire(self, seconds = OPTIMAL_FIRING_TIME):
-        solenoid.on()
+        print("on!")
         sleep(seconds)
-        solenoid.off()
+        print("off!")
     
     def test(self, *args):
-        args = args[0]
-        self.fire(float(args[3]))
+        self.fire(float(args[2]))

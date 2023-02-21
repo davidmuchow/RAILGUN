@@ -20,5 +20,5 @@ class railgun:
         self.warm = True
             
     def activate(self, *variables):
-        variables = variables[0]
+        print(variables)
         

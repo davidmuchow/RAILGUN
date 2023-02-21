@@ -26,9 +26,9 @@ def init():
                      print("wrong var #")
                      continue
                   else:
-                     getattr(railgunner, variables[1])(variables)
+                     getattr(railgunner, variables[1])(*variables)
             except ValueError:
-               print("not a valid cmd")
+               print("not a valid railgun cmd")
          elif variables[0] == "injector":
             try:
                index = airinjectorCommands.index(variables[1])
@@ -39,7 +39,7 @@ def init():
                   else:
                      getattr(injector, variables[1])(*variables)
             except ValueError:
-               print("not a valid cmd")
+               print("not a valid railgun cmd")
          else:
             print("identify command to *injector* or *railgun*")
 
