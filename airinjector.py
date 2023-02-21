@@ -14,5 +14,6 @@ class airinjector:
         sleep(seconds)
         solenoid.off()
     
-    def test(self, seconds):
-        self.fire(seconds)
+    def test(self, *args):
+        args = args[0]
+        self.fire(args[3])
