@@ -11,10 +11,10 @@ class airinjector:
         
     def fire(self, seconds = OPTIMAL_FIRING_TIME):
         print("on!")
-        solenoid.toggle()
+        solenoid.on()
         sleep(seconds)
         print("off!")
-        solenoid.toggle()
+        solenoid.off()
         
     
     def test(self, *args):
